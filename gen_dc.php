@@ -5,6 +5,8 @@ function process_dockerfile($dir="."){
     foreach($list as $item){
         if(is_dir($item)){
             process_dockerfile($item);
+        }elseif(strtolower(basename($item)) == "docker-compose.yml"){
+            // nothing
         }elseif(strtolower(basename($item)) == "dockerfile"){
             $dir = dirname($item);
             $rd = "{$dir}/README.md";
@@ -40,7 +42,9 @@ services:
 {$ports}
 EOT;
             echo "$item\n$image\n$ports\n$dc\n===============\n";
-            $dcfile = "{$dir}/docker-compose.yml";
+            $dcdir = "{$dir}/dc";
+            mkdir($dcdir);
+            $dcfile = "{$dcdir}/docker-compose.yml";
             file_put_contents($dcfile, $dc);
         }
     }
