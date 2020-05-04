@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:d_drupal_1
+    ports:
+      - 80:80

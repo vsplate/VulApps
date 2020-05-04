@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:j_jboss_1
+    ports:
+      - 8080:8080

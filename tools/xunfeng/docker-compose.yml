@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:tools_xunfeng
+    ports:
+      - 80:80

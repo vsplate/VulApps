@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:s_samba_1
+    ports:
+      - 137:137
+      - 138:138
+      - 139:139
+      - 445:445

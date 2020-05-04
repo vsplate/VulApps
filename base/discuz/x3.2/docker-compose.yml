@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:base_discuz_x3.2
+    ports:
+      - 80:80

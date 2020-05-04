@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:z_zabbix_1
+    ports:
+      - 10050:10050
+      - 10051:10051
+      - 80:80

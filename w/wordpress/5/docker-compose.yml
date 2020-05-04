@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:w_wordpress_5
+    ports:
+      - 80:80

@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:base_lamp
+    ports:
+      - 80:80
+      - 443:443

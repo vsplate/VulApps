@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:c_cmseasy_1
+    ports:
+      - 80:80

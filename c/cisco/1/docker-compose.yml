@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:c_cisco_1
+    ports:
+      - 2001:2001

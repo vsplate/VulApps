@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:n_nagios_1
+    ports:
+      - 80:80

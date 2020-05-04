@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:r_redis_1
+    ports:
+      - 22:22
+      - 6379:6379

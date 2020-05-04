@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  vsapp:
+    image: medicean/vulapps:base_joomla_3.7.0
+    ports:
+      - 80:80
